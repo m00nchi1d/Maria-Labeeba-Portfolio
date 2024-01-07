@@ -1,0 +1,142 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: block;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+
+  .section__text {
+    margin-top: 10vh;
+  }
+
+  #about {
+    margin-top: 30vh;
+  }
+
+  .section__pic-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 400px;
+    margin: auto auto;
+    padding-top: 3vh;
+  }
+
+  .row {
+    margin-top: 25vh;
+    margin-left: 5vh;
+    margin-right: 3vh;
+  }
+
+  #experience {
+    padding-top: 9vh;
+    padding-left: 0;
+  }
+
+  #experience h1 {
+    margin-right: 3vh;
+  }
+
+  .explore-tabs {
+    margin: 0;
+    margin-right: 3vh;
+    margin-bottom: 0;
+  }
+
+  #experience .tab-content.active,
+  .timeline-item {
+    margin: 0;
+    padding: 0;
+    padding-right: 3vh;
+    padding-left: 3vh;
+  }
+
+  .project-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-row .portfolio-item {
+    height: 350px;
+    width: 500px;
+  }
+
+  #project {
+    padding-top: 12vh;
+    height: 175vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+
+  #contact {
+    padding-bottom: 10vh;
+  }
+}
+
+@media only screen and (max-width: 1261px) {
+  .tab-content {
+    overflow-y: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .main {
+    width: 600px;
+  }
+
+  #about {
+    margin-top: 25rem;
+  }
+
+  #contact{
+    margin-top: 20rem;
+  }
+}
+

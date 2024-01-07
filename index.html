@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website Title -->
+    <title>My Portfolio</title>
+
+    <!-- Link to CSS stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<!-- Main Start -->
+<div class="main ">
+
+  <body>
+    <!-- Desktop Nav -->
+    <nav id="desktop-nav">
+        <div class="logo">Maria Labeeba</div>
+        <div>
+            <ul class="nav-links">
+                <!-- Navigation at top of web page -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hamburger Nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Maria Labeeba</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+    <div class="section__pic-container-profile">
+        <img src="./assets/profile-pic.png" alt="Maria Labeeba profile picture">
+    </div>
+
+    <!-- About Section-->
+    <div class="section__text">
+      <p class="section__text__p1">Hello I'm</p>
+      <h1 class="title">Maria Labeeba</h1>
+      <p class="section__text__p2">Computer Engineering Student</p>
+      <div class="btn-container">
+        <!-- Download CV Button -->
+        <button class="btn btn-color-2" onclick="window.open('./assets/maria-labeeba-resume.pdf')">Download CV</button>
+        <!-- Contact Info Button -->
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+
+        <!-- LinkedIn -->
+        <img 
+          src="./assets/linkedin.png" 
+          alt="My LinkedIn Profile" 
+          class="icon" 
+          onclick="location.href='http://www.linkedin.com/in/mzlabeeba'"
+        />
+
+        <!-- GitHub -->
+        <img 
+          src="./assets/github.png" 
+          alt="My Github Profile" 
+          class="icon" 
+          onclick="location.href='https://github.com/m00nchi1d'"
+        />
+
+
+      </div>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img 
+            src="./assets/about-pic.png" 
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="row">
+          <div class="about-text">
+            <p>
+              Enthusiastic B.Eng student at <b>Toronto Metropolitan University</b> studying Computer Engineering. 
+              Passionate for front-end development, especially in modern web design, and always eager to learn new technologies.
+              I thrive in diverse project environments with excellent communication and problem-solving skills. 
+            </p>
+            <h2 class="skills-title">Skills</h2>
+            <h3 class="programming-language-title">Programming Languages</h3>
+            <div class="language">
+              <div class="language-item">C Programming</div>
+              <div class="language-item">Java</div>
+              <div class="language-item">Python</div>
+              <div class="language-item">Assembly</div>
+              <div class="language-item">VHDL</div>
+              <div class="language-item">SQL</div>
+              <div class="language-item">MATLAB</div>
+              <div class="language-item">HTML/CSS</div>
+            </div>
+  
+            <h3 class="software-application-title">Software Applications</h3>
+            <div class="application">
+              <div class="app-item">MultiSim</div>
+              <div class="app-item">Quartus</div>
+              <div class="app-item">VSCode</div>
+              <div class="app-item">Oracle</div>
+              <div class="app-item">Windows OS</div>
+              <div class="app-item">Linux OS</div>
+              <div class="app-item">Unix</div>
+              <div class="app-item">Mac OS</div>
+              <div class="app-item">Oracle Apex</div>
+              <div class="app-item">MS Office</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section-->
+    <section id="experience">
+      <p class="section__text__explore">Explore My</p>
+      <h1 class="title">Education & Experience</h1>
+
+      <div class="explore-tabs">
+        <button type="button" class="tab-item active" data-target="#education">Education</button>
+        <button type="button" class="tab-item" data-target="#experience">Experience</button>
+      </div>
+
+      <!-- Education Start -->
+      <div class="tab-content active" id="education">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <span class="date">2020 - Present</span>
+            <h4>Bachelor of Engineering (B.Eng) -<span>Major in Computer Engineering</span> </h4>
+            <h5>Toronto Metropolitan University <i>(formerly Ryerson University)</i></h5>
+            <p><b>Certification:</b> IEEE Computer Society - Unix, Git/GitHub, SQL, Python</p>
+            <p><b>Relevant Coursework:</b> Algorithms and Data Structures; Object Oriented Eng Analysis and Design; Database Systems; Microprocessor Systems; Computer Architecture; Operating Systems; Advanced Algorithms
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="date">2015 - 2019</span>
+            <h4>Highschool Diploma -<span>Math and Science Technology Program (MaST)</span> </h4>
+            <h5>Danforth Collegiate and Technical Institute</h5>
+            <p><b>Certification:</b> Ontario Honours Certificate, Core French Certificate</p>
+          </div>
+
+        </div>
+      </div>
+      <!-- Experience Start -->
+      <div class="tab-content" id="experience">
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="date"> Sept 2022 - Dec 2023</span>
+            
+            <h4>TMU First Year Engineering Office<span>| Toronto Metropolitan University</span></h4>
+            <h5>Introduction to Engineering Project Manager</h5>
+            <li class="ex-list">Supervised and mentored three teams of first-year engineering students in Fall 2022 and Fall 2023.</li>
+            <li class="ex-list">Collaborated with Teaching Assistants to create an engaging and structured learning atmosphere.</li>
+            <li class="ex-list">Supported student success by addressing questions and strategies outside of class.</li>
+            <li class="ex-list">Demonstrated strong leadership, time-management, and communication skills throughout the role.</li>
+          </div>
+  
+          <div class="timeline-item">
+            <span class="date"> Apr 2021 - Aug 2021</span>
+            <h4>Apple CA<span>| Remote</span></h4>
+            <h5>Technical Support Advisor <i>(Contracted by Teleperformance)</i></h5>
+            <li class="ex-list">Provided technical support to Apple customers, resolving complex issues across various devices.</li>
+            <li class="ex-list">Utilized methodical troubleshooting and clear communication to exceed customer expectations.</li>
+            <li class="ex-list">Thrived in a dynamic, fast-paced environment to deliver exceptional customer service and technical solutions.</li>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="container">
+        <div class="project-row">
+          <!-- Portfolio Item 1 -->
+
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./assets/movie-and-music-dbms.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Movie and Music DBMS</h3>
+            <button type="button" class="project-btn view-project-btn-1" style="text-align: center;">View Project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>The Movie and music database system is a collection of information and user feedback 
+                  used by different audiences to find movies and music that appeal to them. Using Oracle Apex, 
+                  the system aims to collect summaries, ratings, and reviews for various films and music which will 
+                  lead to more efficient and organized browsing for users. Regarding updating and inputting 
+                  information, the admin will be responsible for ensuring all information is up-to-date and 
+                  reliable. 
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Date - <span>November 2023</span></li>
+                  <li>Technologies Used - 
+                    <span>
+                      <li>SQL</li>
+                      <li>Oracle APEX</li>
+                      <li>Unix Shell Scripting</li>
+                    </span>
+                  </li>
+                  <li>Website - 
+                    <span>
+                      <a href="https://apex.oracle.com/pls/apex/r/cps510/test10878/login?session=109030947810860" target="_blank">
+                        www.movieandmusicdbms.ca
+                      </a>
+                    </span>
+                  </li>
+                  <li>View Report - 
+                    <span>
+                      <button class="report-btn" onclick="window.open('./assets/dbms-report.pdf')">
+                        Open
+                      </button>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Portfolio Item 2 -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./assets/p2p-app.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Peer to Peer Application</h3>
+            <button type="button" class="project-btn view-project-btn-2">View Project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A P2P application was built which allowed users to share content with each other 
+                  through an index server. Every client could both provide and request content. 
+                  Content servers registered their data with the index server, while the content 
+                  clients received the address of that data so they could access it from the content 
+                  server. 
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Date - <span>December 2023</span></li>
+                  <li>Technologies Used - 
+                    <span>
+                      <li>Visual Studio Code</li>
+                      <li>C Programming</li>
+                    </span>
+                  </li>
+                  <li>View Report - 
+                    <span>
+                      <button class="report-btn" onclick="window.open('./assets/p2p-final-lab-report.pdf')">
+                        Open
+                      </button>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+           <!-- Portfolio Item 3 -->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="./assets/bookstore.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Bookstore Application</h3>
+            <button type="button" class="project-btn view-project-btn-3">View Project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Developed a JavaFX-based Book Store Application with a single-window GUI,
+                   allowing users to manage books and customers efficiently. 
+                </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>Date - <span>April 2023</span></li>
+                  <li>Technologies Used - 
+                    <span>
+                      <li>Java</li>
+                      <li>Java FX</li>
+                      <li>Use Case & Class Diagrams</li>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Portfolio Item End-->
+          
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End-->
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img 
+          src="./assets/email.png" 
+          alt="Email icon" 
+          class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mzlabeeba@gmail.com">mzlabeeba@gmail.com</a></p>
+        </div>
+
+        <div class="contact-info-container">
+          <img 
+          src="./assets/linkedin.png" 
+          alt="linkedin icon" 
+          class="icon contact-icon"
+          />
+          <p><a href="http://www.linkedin.com/in/mzlabeeba">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links nav-links-footer">
+            <!-- Navigation at top of web page -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Maria Labeeba. All Rights Reserved</p>
+    </footer>
+
+
+    
+</body>
+<!-- Main End -->
+</div>
+
+    <!-- Portfolio Items Pop-up Start-->
+
+    <!-- Project 1 -->
+    <div class="portfolio-popup-1">
+      <div class="pp-inner">
+        <div class="pp-content">
+
+          <div class="pp-header">
+            <button type="button" class="popup-btn view-popup-btn-1"><i class="fas fa-times"></i></button>
+            <div class="pp-thumbnail">
+              <img src="./assets/movie-and-music-dbms-2.png" alt="pp-thumbnail">
+            </div>
+            <h3>Movie and Music DBMS</h3>
+          </div>
+
+          <div class="pp-body">
+            <div class="description">
+              <p>The Movie and music database system is a collection of information and user feedback 
+                used by different audiences to find movies and music that appeal to them. Using Oracle Apex, 
+                the system aims to collect summaries, ratings, and reviews for various films and music which will 
+                lead to more efficient and organized browsing for users. Regarding updating and inputting 
+                information, the admin will be responsible for ensuring all information is up-to-date and 
+                reliable. 
+              </p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li><b>Date - </b><span>November 2023</span></li>
+                <li><b>Technologies Used -</b>  
+                  <span>
+                    <div class="tech-item">SQL</div>
+                    <div class="tech-item">Oracle APEX</div>
+                    <div class="tech-item">Unix Shell Scripting</div>
+                  </span>
+                </li>
+                <li><b>Website - </b>
+                  <span>
+                    <a href="https://apex.oracle.com/pls/apex/r/cps510/test10878/login?session=109030947810860" target="_blank">
+                      www.movieandmusicdbms.ca
+                    </a>
+                  </span>
+                </li>
+                <li><b>View Report - </b>
+                  <span>
+                    <button class="report-btn" onclick="window.open('./assets/dbms-report.pdf')">
+                      Open
+                    </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-popup-2">
+      <div class="pp-inner">
+        <div class="pp-content">
+
+          <div class="pp-header">
+            <button type="button" class="popup-btn view-popup-btn-2"><i class="fas fa-times"></i></button>
+            <div class="pp-thumbnail">
+              <img src="./assets/p2p-app-2.png" alt="pp-thumbnail">
+            </div>
+            <h3>Peer-to-Peer Application</h3>
+          </div>
+
+          <div class="pp-body">
+            <div class="description">
+              <p>A P2P application was built which allowed users to share
+                content with each other through an index server. Every client could both provide and request content.
+                Content servers registered their data with the index server, while the content clients received the
+                address of that data so they could access it from the content server. UDP was used for
+                communication between peers and the index server and TCP was used to download content between
+                peers. 
+              </p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li><b>Date - </b><span>December 2023</span></li>
+                <li><b>Technologies Used -</b>  
+                  <span>
+                    <div class="tech-item">C Programming</div>
+                    <div class="tech-item">Visual Studio Code</div>
+                  </span>
+                </li>
+                <li><b>View Report - </b>
+                  <span>
+                    <button class="report-btn" onclick="window.open('./assets/p2p-final-lab-report.pdf')">
+                      Open
+                    </button>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-popup-3">
+      <div class="pp-inner">
+        <div class="pp-content">
+
+          <div class="pp-header">
+            <button type="button" class="popup-btn view-popup-btn-3"><i class="fas fa-times"></i></button>
+            <div class="pp-thumbnail">
+              <img src="./assets/bookstore-1.png" alt="pp-thumbnail">
+            </div>
+            <h3>Bookstore Application</h3>
+          </div>
+
+          <div class="pp-body">
+            <div class="description">
+              <p>I created a Book Store Application using JavaFX, featuring a user-friendly 
+                interface with all functions accessible in a single window. This application 
+                enables users to efficiently handle books and customers.  
+              </p>
+            </div>
+            <div class="general-info">
+              <ul>
+                <li><b>Date - </b><span>April 2022</span></li>
+                <li><b>Technologies Used -</b>  
+                  <span>
+                    <div class="tech-item">Java</div>
+                    <div class="tech-item">Java FX</div>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Portfolio Items Pop-up End-->
+
+    <!-- Link JS Script file -->
+    <script src="script.js"></script>
+
+</html>
